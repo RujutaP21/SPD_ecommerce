@@ -8,23 +8,49 @@
 </head>
 <body>
 
-  <!-- Yellow paypal color: ffcc00 -->
-  <!-- blue paypal color: 043088 -->
-  <!-- <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_100x26.png" alt="PayPal" /> -->
+  <section>
+    <h3>Paypal buttom</h3>
 
-  <!-- Confirm working code start yellow -->
-  <pre> 
-    $(".paypalbutton__link").css("background", "#ffcc00");
-    $(".paypalbutton__link").css("border", "#ffcc00");
-    $(".paypalbutton__link").html("<img src='https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_100x26.png' alt='PayPal'/>");
-  </pre>
-  <!-- Confirm working code end -->
+    <article>
+      <h5>Option 1 - Yellow color</h5>
+      <pre> 
+        $(".paypalbutton__link").css("background", "#ffcc00");
+        $(".paypalbutton__link").css("border", "#ffcc00");
+        $(".paypalbutton__link").html("<img src='https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_100x26.png' alt='PayPal'/>");
+      </pre>
+      <img src="images/Solution1.PNG" alt="yellowbutton">
+    </article>
 
-  <!-- Confirm working code start blue -->
-  <pre>
-    $( ".paypalbutton__link" ).css( "background", "#043088"); 
-    $(".paypalbutton__link").css("border", "#043088");
-  </pre>
+    <article>
+      <h5>Option 2- Blue color</h5>
+      <pre>
+        $( ".paypalbutton__link" ).css( "background", "#043088"); 
+        $(".paypalbutton__link").css("border", "#043088");
+      </pre>    
+      <img src="images/Solution1.PNG" alt="yellowbutton">
+    </article>  
+  </section>
+
+  <section>
+    <h3>Shipping method</h3>
+    <img src="images/BeforeShipping.PNG" alt="Beforechange">
+    <article>
+      <h5> Make all option visible</h5>
+      <pre> 
+        $(".shopping-cart__shipping-mode__list").css("display" , "grid");
+        $(".shopping-cart__shipping-mode__list").css("grid-template-columns" , "1fr 1fr 1fr");
+        $(".shopping-cart__shipping-mode__list").css("grid-column-gap" , "0.5em");
+        $(".shipping-mode__method ").css("flex-direction" , "column");
+        $(".shipping-mode__method ").css("justify-content" , "space-evenly");
+        $(".shipping-mode__method ").css("border" , "1px solid black");
+        $(".shipping-mode__method ").css("width" , "250px");
+        $(".shipping-mode").css("background-color" , "white");
+        $(".shipping-mode__method ").css("padding" , "1em");
+      </pre>
+      <img src="images/AfterShipping.PNG" alt="afterchange">
+    </article>
+
+  </section>
 
 </body>
 </html>
