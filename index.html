@@ -9,7 +9,10 @@
 <body>
 
   <section>
-    <h3>Paypal buttom</h3>
+    <h3>Paypal button</h3>
+    <h4>Before</h4>
+    <img src="images/existed-btn.png" alt="website-existed-img" width="200px">
+    <h4>after</h4>
 
     <article>
       <h5>Option 1 - Yellow color</h5>
@@ -27,33 +30,37 @@
         $( ".paypalbutton__link" ).css( "background", "#043088"); 
         $(".paypalbutton__link").css("border", "#043088");
       </pre>    
-      <img src="images/Solution1.PNG" alt="yellowbutton">
+      <img src="images/blue-btn.png" alt="blueowbutton" width="200px">
     </article>  
   </section>
+  <hr>
 
   <section>
     <h3>Shipping method</h3>
+    <h4>Before</h4>
     <img src="images/BeforeShipping.PNG" alt="Beforechange">
+    <h4>After</h4>
     <article>
       <h5> Make all option visible</h5>
       <pre> 
-        $(".shopping-cart__shipping-mode__list").css("display" , "grid");
-        $(".shopping-cart__shipping-mode__list").css("grid-template-columns" , "1fr 1fr 1fr");
-        $(".shopping-cart__shipping-mode__list").css("grid-column-gap" , "0.5em");
-        $(".shipping-mode__method ").css("flex-direction" , "column");
-        $(".shipping-mode__method ").css("justify-content" , "space-evenly");
+        $( ".shopping-cart__shipping-mode__list" ).css( "display", "flex" );
+        $( ".shipping-mode__method" ).css( "margin", "5px" );
         $(".shipping-mode__method ").css("border" , "1px solid black");
-        $(".shipping-mode__method ").css("width" , "250px");
-        $(".shipping-mode").css("background-color" , "white");
-        $(".shipping-mode__method ").css("padding" , "1em");
+        $( ".shipping-mode__method" ).css( "padding", "23px" );
+        $( ".shipping-mode__method" ).css( "FlexDirection", "column" );
+        $( ".shipping-mode__method" ).css( "backgroundColor", "#f6f6f6" );
+        $( ".shipping-mode__method-price" ).css( "marginLeft", "32px" );
       </pre>
       <img src="images/AfterShipping.PNG" alt="afterchange">
     </article>
   </section>
-
+ 
+  <hr>
   <section>
     <h3>Call to action button</h3>
+    <h4>Before</h4>
     <img src="images/fixed_cta_before.PNG" alt="Beforechange">
+    <h4>After</h4>
     <article>
       <h5>Make Add to cart Call to action button at bottom</h5>
       <pre> 
@@ -64,6 +71,28 @@
       <img src="images/fixed-cta_bottom.PNG" alt="afterchange">
     </article>
   </section>
+  <hr>
+  <section>
+    <h3>Search option</h3>
+    <h4>Before</h4>
+    <img src="images/search-before.png" alt="Beforechange-overlay" width="800px">
+    <img src="images/search-2-before.png" alt="Beforechange-home-screen-bar" width="800px">
+    
+    <h4>After</h4>
+    <article>
+      <h5>edit search design & create a search feild with categories</h5>
+      <pre> 
+        $( ".sgh-search--input" ).css( "border", "1px solid #dadada" )
+        $( ".sgh-search--input" ).css( "padding", "6px 10px" )
+        $( ".sgh-search--input" ).css( "border-radius", "30px" )
+        $( ".sgh-search--input a" ).css( "padding", “5px" )
+        $( "#SimpleSearchForm_SearchTerm" ).val( "Search for items, brands and inspirations" );
+      </pre>
+      <img src="images/search-after.png" alt="afterchange" width="1000">
+    </article>
+  </section>
+  <hr>
+
 
 </body>
 </html>
