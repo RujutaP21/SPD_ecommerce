@@ -86,12 +86,17 @@
         $( ".sgh-search--input" ).css( "border", "1px solid #dadada" );
         $( ".sgh-search--input" ).css( "padding", "6px 10px" );
         $( ".sgh-search--input" ).css( "border-radius", "30px" );
-        $( ".sgh-search--input a" ).css( "padding", “5px" );
+        $( ".sgh-search--input a" ).css( "padding", "5px" );
         $( "#SimpleSearchForm_SearchTerm" ).val( "Search for items, brands and inspirations" );
         $(".sgh-search-overlay .sgh-search-common .sgh-search--input").css("width","500px");
-
+        $(".sgh-search-suggestions a").removeClass("btn");
+        $(".sgh-search-suggestions a").removeClass("btn-default");
+        $(".sgh-search-suggestions a").css("display","block");
+        $(".sgh-search-suggestions a").css("margin","7px auto");
+        $(".sgh-search-suggestions a").css("text-align","left");
+        $(".sgh-search-suggestions a").css("padding","0.2em");
       </pre>
-      <img src="images/search-after.png" alt="afterchange" width="1000">
+      <img src="images/search_bar_after.PNG" alt="afterchange" width="1000">
     </article>
   </section>
   <hr>
@@ -135,24 +140,6 @@
 </body>
 </html>
 
-.sgh-search-overlay .sgh-search-suggestions a {
-  margin: 7px auto;
-  display: block;
-  white-space: nowrap;
-  text-align: left;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  direction: rtl;
-  max-width: 175px;
-  padding: 0.2em;
-}
-
-padding: 0.5em;
-position: relative;
-right: 20px;
-font-weight: 500;
-.sgh-search-overlay .sgh-search-common .sgh-search--input {
-width: 500px;
 <h2 class="search-title-header" style="
 /* text-align: left; */
 padding: 0.5em;
@@ -161,4 +148,3 @@ right: 20px;
 font-weight: 500;
 ">Popular Search</h2>
 
-$( "article h2" ).remove()
