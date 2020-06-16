@@ -95,6 +95,11 @@
         $(".sgh-search-suggestions a").css("margin","7px auto");
         $(".sgh-search-suggestions a").css("text-align","left");
         $(".sgh-search-suggestions a").css("padding","0.2em");
+        $(".sgh-search-suggestions a:nth-child(3)").prepend("<h2 class = 'search-suggestions-heading'>Popular Search</h2>");
+        $(".sgh-search-suggestions a:nth-child(4)").append("<h2 class = 'search-suggestions-heading'>Popular Search</h2>");
+        $(".sgh-search-suggestions .search-suggestions-heading").css("padding","0.5em 0");
+        $(".sgh-search-suggestions .search-suggestions-heading").css("font-weight","500");
+
       </pre>
       <img src="images/search_bar_after.PNG" alt="afterchange" width="1000">
     </article>
@@ -140,11 +145,4 @@
 </body>
 </html>
 
-<h2 class="search-title-header" style="
-/* text-align: left; */
-padding: 0.5em;
-position: relative;
-right: 20px;
-font-weight: 500;
-">Popular Search</h2>
 
