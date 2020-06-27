@@ -95,8 +95,9 @@
         $(".sgh-search-suggestions a").css("margin","7px auto");
         $(".sgh-search-suggestions a").css("text-align","left");
         $(".sgh-search-suggestions a").css("padding","0.2em");
-        $(".sgh-search-suggestions a:nth-child(3)").prepend("<h2 class = 'search-suggestions-heading'>Popular Search</h2>");
-        $(".sgh-search-suggestions a:nth-child(4)").append("<h2 class = 'search-suggestions-heading'>Popular Search</h2>");
+
+        $(".sgh-search-suggestions a:nth-child(3)").before("<h2 class = 'search-suggestions-heading'>Popular Search</h2>");
+        $(".sgh-search-suggestions a:nth-child(5)").after("<h2 class = 'search-suggestions-heading'>Popular Brands</h2>");
         $(".sgh-search-suggestions .search-suggestions-heading").css("padding","0.5em 0");
         $(".sgh-search-suggestions .search-suggestions-heading").css("font-weight","500");
 
