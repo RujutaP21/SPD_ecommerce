@@ -246,7 +246,33 @@
     </article>
   </section>
 
+  <section>
+    <h3>Color Variation in pdp</h3>
+  <h4>Before</h4>
+  <img src="images/BeforeAutoSave.PNG" alt="Beforechange-oautosave" width="800px">
+
+  <h4>After</h4>
+  <article>
+    <h5>Add color variation in Product display page</h5>
+    <pre> 
+      $("#pdp").find(".sgh-pdp-brand-logo-box ").html($(".pdp-slide-menu-filter-list__link"));
+      $("#pdp").find(".sgh-pdp-brand-logo-box ").find(".pdp-slide-menu-filter-list-info").remove();
+      $(".product-feed__title div").removeClass( "sgh-pdp-brand-logo-box").addClass( "sgh-pdp-brand-logo-container" );
+      $(".sgh-pdp-brand-logo-container img").css("max-width" , "180px");
+      $(".sgh-pdp-brand-logo-container img").css("height" , "auto");
+      $(".sgh-pdp-brand-logo-box ").css("width" , "600px");
+      $(".sgh-pdp-brand-logo-box ").css("position" , "relative");
+      $(".sgh-pdp-brand-logo-box ").css("left" , "150px");
+      $(".sgh-pdp-brand-logo-box img").css("width" , "140px");
+      $(".sgh-pdp-brand-logo-box").slick({infinite: false, slidesToShow: 4 , slidesToScroll: 3});
+      $(".pdp-overlay-popup--open").css("visibility" , "hidden");
+      $(".sgh-pdp__filter-button").css("display" , "none");
+      $(".sgh-pdp-brand-logo-box").addClass("perfect-pair-promise");
+
+    </pre>
+    <img src="images/afterautosave.PNG" alt="after-autosave-message" width="1000">
+  </article>
+</section>
+
 </body>
 </html>
-sgh-swiper sgh-scroll-tiles
-
